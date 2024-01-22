@@ -40,15 +40,15 @@ const TopMenuBar = () => {
     const menuStyle = `
         text-slate-700
         fixed top-0 w-full p-6 h-20
-        bg-slate-300
+        bg-slate-400
         flex flex-row items-center justify-between
         transition-all duration-300 ease-in-out
-        transform ${isVisible ? 'translate-y-0 opacity-95' : '-translate-y-full opacity-0'}
+        transform ${isVisible ? 'translate-y-0 opacity-98' : '-translate-y-full opacity-0'}
         `;
     
     const menuItemStyle = `
         text-l
-        text-slate-700
+        text-slate-100
         hover:text-white
         transition-all duration-200 ease-in-out
         cursor-pointer
@@ -82,22 +82,25 @@ const TopMenuBar = () => {
                     </svg>)
                 }
 
-                <h1 className='text-2xl'>
-                    Matt Kwiatkowski
+                <h1 className='text-2xl text-slate-500'>
+                    {/* &lt; */}
+                    <span className="text-slate-100">Matt Kwiatkowski</span>
+                    {/* &gt; */}
                 </h1>
             </div>
 
             <div className='hidden md:flex flex-row gap-6'>
-                <h2 className={menuItemStyle}>Item 1</h2>
-                <h2 className={menuItemStyle}>Item 2</h2>
-                <h2 className={menuItemStyle}>Item 3</h2>
-                <h2 className={menuItemStyle}>Item 4</h2>
+                <a href="#aboutme"><h2 className={menuItemStyle}>About Me</h2></a>
+                
+                <a href="#portfolio"><h2 className={menuItemStyle}>Portfolio</h2></a>
+                <a href="#aboutme"><h2 className={menuItemStyle}>Research</h2></a>
+                <a href="#aboutme"><h2 className={menuItemStyle}>Contact</h2></a>
             </div>
             <div className={dropdownMenuStyle}>
-                <h2 className={dropdownItemStyle}>Item 1</h2>
-                <h2 className={dropdownItemStyle}>Item 2</h2>
-                <h2 className={dropdownItemStyle}>Item 3</h2>
-                <h2 className={dropdownItemStyle}>Item 4</h2>
+                <a href="#aboutme"><h2 className={dropdownItemStyle}>About Me</h2></a>
+                <a href="#portfolio"><h2 className={dropdownItemStyle}>Portfolio</h2></a>
+                <a href="#aboutme"><h2 className={dropdownItemStyle}>Research</h2></a>
+                <a href="#aboutme"><h2 className={dropdownItemStyle}>Contact</h2></a>
             </div>
         </div>
     );
