@@ -3,6 +3,7 @@
 import Projects from "./projects";
 import AboutMe from "./aboutme";
 import TopMenuBar from "./topMenu";
+import ContactMe from "./contactMe";
 
 export default function HomePage() {
   return (
@@ -11,9 +12,7 @@ export default function HomePage() {
       <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 mt-16 md:px-24">
         <AboutMe />
         <Projects />
-        <h1 id="text2" className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem] mt-96 mb-96">
-          Some Text
-        </h1>
+        <ContactMe />
       </div>
     </main>
   );

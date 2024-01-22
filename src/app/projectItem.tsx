@@ -11,9 +11,9 @@ export interface ProjectItemProps {
 const ProjectItem = (props: ProjectItemProps) => {
     console.log('loading with imageRight: ' + props.imageRight)
     return (
-        <div className='h-96'>
+        <div className=''>
             <a href={props.url} target="_blank">
-                <h1 className="underline text-2xl font-bold sm:text-4xl text-slate-100 mb-12">
+                <h1 className={`${(props.url) ? 'underline' : ''} text-2xl font-bold sm:text-4xl text-slate-100 mb-12`}>
                     { props.name }
                 </h1>
             </a> 

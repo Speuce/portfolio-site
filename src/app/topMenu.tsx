@@ -41,6 +41,8 @@ const TopMenuBar = () => {
         text-slate-700
         fixed top-0 w-full p-6 h-20
         bg-slate-400
+        font-semibold
+        pr-12
         flex flex-row items-center justify-between
         transition-all duration-300 ease-in-out
         transform ${isVisible ? 'translate-y-0 opacity-98' : '-translate-y-full opacity-0'}
@@ -48,6 +50,7 @@ const TopMenuBar = () => {
     
     const menuItemStyle = `
         text-l
+        font-semibold
         text-slate-100
         hover:text-white
         transition-all duration-200 ease-in-out
@@ -62,6 +65,7 @@ const TopMenuBar = () => {
         w-full
         transition-all duration-200 ease-in-out
         transform ${dropdownVisible ? 'opactity-100' : 'opacity-0'}
+        ${dropdownVisible ? '': 'hidden'}
         `;
 
     const dropdownItemStyle = `
@@ -93,14 +97,14 @@ const TopMenuBar = () => {
                 <a href="#aboutme"><h2 className={menuItemStyle}>About Me</h2></a>
                 
                 <a href="#portfolio"><h2 className={menuItemStyle}>Portfolio</h2></a>
-                <a href="#aboutme"><h2 className={menuItemStyle}>Research</h2></a>
-                <a href="#aboutme"><h2 className={menuItemStyle}>Contact</h2></a>
+                {/* <a href="#aboutme"><h2 className={menuItemStyle}>Research</h2></a> */}
+                <a href="#contact"><h2 className={menuItemStyle}>Contact</h2></a>
             </div>
             <div className={dropdownMenuStyle}>
                 <a href="#aboutme"><h2 className={dropdownItemStyle}>About Me</h2></a>
                 <a href="#portfolio"><h2 className={dropdownItemStyle}>Portfolio</h2></a>
-                <a href="#aboutme"><h2 className={dropdownItemStyle}>Research</h2></a>
-                <a href="#aboutme"><h2 className={dropdownItemStyle}>Contact</h2></a>
+                {/* <a href="#aboutme"><h2 className={dropdownItemStyle}>Research</h2></a> */}
+                <a href="#contact"><h2 className={dropdownItemStyle}>Contact</h2></a>
             </div>
         </div>
     );
