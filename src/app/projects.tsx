@@ -10,7 +10,7 @@ const Projects = () => {
             <ProjectItem name="ContextCrunch" description="
             ContextCrunch is an AI startup concept that aims to reduce token usage and increase the relevancy of prompts fed into Large Language Models. 
             It operates using a custom LLM deployed on a hybrid serverless architecture. 
-            The API is built using FastAPI, the proxy backend and frontent in NextJS, and deployed on Vercel.
+            The API is built using FastAPI, the proxy backend and frontend in NextJS, and deployed on Vercel.
             Using ContextCrunch, prompts can be compressed as much as 90%-95% while still retaining the necessary information to generate a response." 
               image={"/contextcrunch.png"} 
               imageRight={true}
